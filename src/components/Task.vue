@@ -38,10 +38,19 @@ const onRightClick = (event: MouseEvent) => {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ddd;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  border: 4px solid #000; /* borda grossa estilo HQ */
+  box-shadow: 4px 4px 0px #000; /* sombra chapada */
   gap: 0.5rem;
   position: relative; 
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.task:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000;
 }
 
 label {
@@ -49,21 +58,36 @@ label {
   align-items: center;
   gap: 0.5rem;
   flex: 1;
+  font-family: 'Comic Neue', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0f3d2e; /* Verde Doctor Doom */
+  cursor: pointer;
 }
 
 .done {
   text-decoration: line-through;
+  text-decoration-thickness: 3px;
+  text-decoration-color: #ff0000; /* riscado vermelho dramático */
   color: #888;
 }
 
 .remove-btn {
-  background: none;
-  border: none;
-  color: red;
+  background-color: #ff0000; /* Vermelho HQ */
+  border: 3px solid #000;
+  color: #fff;
+  font-weight: bold;
   cursor: pointer;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding: 0.4rem 0.6rem;
+  box-shadow: 2px 2px 0px #000;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.remove-btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #000;
 }
 </style>

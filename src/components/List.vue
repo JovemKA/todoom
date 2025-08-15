@@ -47,11 +47,13 @@ const toggleDone = (id: number) => {
 
 <style scoped>
 .list-wrapper {
-  background-color: white;
+  background-color: #0f3d2e; /* verde escuro Doctor Doom */
   padding: 1rem;
   border-radius: 8px;
   width: 100%;
   max-width: 400px;
+  border: 4px solid #000; /* borda estilo HQ */
+  box-shadow: 6px 6px 0px #000; /* sombra chapada */
 }
 
 .todo-list {
@@ -63,4 +65,18 @@ const toggleDone = (id: number) => {
 .input-wrapper {
   margin-top: 1rem;
 }
+
+/* Pequeno detalhe de "tira de HQ" nas tasks */
+.todo-list li + li {
+  margin-top: 0.5rem;
+}
+
+/* Placeholder do input em estilo HQ */
+.input input::placeholder {
+  color: #888;
+  font-style: italic;
+  font-family: 'Comic Neue', cursive;
+  text-shadow: 1px 1px 0px #000;
+}
+
 </style>
