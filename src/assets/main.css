@@ -1,3 +1,11 @@
+:root {
+    --doom-green: #0f3d2e;           /* Doctor Doom's armor green */
+    --doom-gold: #d4af37;            /* Doctor Doom's gold accents */
+    --doom-dark: #222;               /* Deep shadow for contrast */
+    --doom-bg: #ebe1d9;              /* Light background inspired by Doom's cloak lining */
+    --doom-accent: #ff0000;          /* Red accent for dramatic effect */
+}
+
 * {
     margin: 0;
     padding: 0;

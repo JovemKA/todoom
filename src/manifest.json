@@ -1,0 +1,17 @@
+{
+  "name": "Todoom",
+  "short_name": "Todoom",
+  "theme_color": "#0f3d2e",
+  "background_color": "#ebe1d9",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "public/todoom.ico",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+  ]
+}
